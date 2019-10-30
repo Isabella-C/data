@@ -1,29 +1,31 @@
-ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,var_id_dst,var_nm_dst,rel_id,rel_nm
-002,app,004,app_id,003,edw_staging,015,app_id,001,copy
-002,app,005,app_dt,003,edw_staging,016,app_dt,001,copy
-002,app,006,surname1,003,edw_staging,017,surname1,001,copy
-002,app,007,first_name1,003,edw_staging,018,first_name1,001,copy
-002,app,008,cust1_id,003,edw_staging,019,cust1_id,001,copy
-002,app,009,surname2,003,edw_staging,020,surname2,001,copy
-002,app,010,first_name2,003,edw_staging,021,first_name2,001,copy
-002,app,011,cust2_id,003,edw_staging,022,cust2_id,001,copy
-002,app,012,loan_amt,003,edw_staging,023,loan_amt,001,copy
-002,app,013,deposit_amt,003,edw_staging,024,deposit_amt,001,copy
-002,app,014,property_value,003,edw_staging,025,property_value,001,copy
-003,edw_staging,019,cust1_id,004,edw_applicant,026,cust_id,002,rename
-003,edw_staging,017,surname1,004,edw_applicant,027,applicant_surname,002,rename
-003,edw_staging,018,first_name1,004,edw_applicant,028,applicant_first_name,002,rename
-003,edw_staging,022,cust2_id,004,edw_applicant,028,applicant_first_name,003,rename | filter
-003,edw_staging,020,surname2,004,edw_applicant,026,cust_id,003,rename | filter
-003,edw_staging,021,first_name2,004,edw_applicant,027,applicant_surname,003,rename | filter
-003,edw_staging,015,app_id,005,edw_application,029,app_id,001,copy
-003,edw_staging,016,app_dt,005,edw_application,030,app_dt,001,copy
-003,edw_staging,023,loan_amt,005,edw_application,031,loan_amt,001,copy
-003,edw_staging,024,deposit_amt,005,edw_application,032,deposit_amt,001,copy
-003,edw_staging,025,property_value,005,edw_application,033,property_value,001,copy
-003,edw_staging,"['023', '025']","['loan_amt', 'property_value']",005,edw_application,034,lvr,004,transformation | multi-sourced
-003,edw_staging,"['024', '025']","['deposit_amt', 'property_value']",005,edw_application,035,deposit_pct,004,transformation | multi-sourced
-005,edw_application,029,app_id,006,edw_pd,036,app_id,001,copy
-005,edw_application,['034'],['lvr'],006,edw_pd,037,pd,005,transformation | single-sourced
-005,edw_application,029,app_id,007,edw_lgd,038,app_id,001,copy
-005,edw_application,['034'],['lvr'],007,edw_lgd,039,lgd,005,transformation | single-sourced
+,ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,var_id_dst,var_nm_dst,rel_id,rel_nm
+0,002,app,004,app_id,003,edw_staging,015,app_id,001,copy
+1,002,app,005,app_dt,003,edw_staging,016,app_dt,001,copy
+2,002,app,006,surname1,003,edw_staging,017,surname1,001,copy
+3,002,app,007,first_name1,003,edw_staging,018,first_name1,001,copy
+4,002,app,008,cust1_id,003,edw_staging,019,cust1_id,001,copy
+5,002,app,009,surname2,003,edw_staging,020,surname2,001,copy
+6,002,app,010,first_name2,003,edw_staging,021,first_name2,001,copy
+7,002,app,011,cust2_id,003,edw_staging,022,cust2_id,001,copy
+8,002,app,012,loan_amt,003,edw_staging,023,loan_amt,001,copy
+9,002,app,013,deposit_amt,003,edw_staging,024,deposit_amt,001,copy
+10,002,app,014,property_value,003,edw_staging,025,property_value,001,copy
+11,003,edw_staging,019,cust1_id,004,edw_applicant,026,cust_id,002,rename
+12,003,edw_staging,017,surname1,004,edw_applicant,027,applicant_surname,002,rename
+13,003,edw_staging,018,first_name1,004,edw_applicant,028,applicant_first_name,002,rename
+14,003,edw_staging,022,cust2_id,004,edw_applicant,028,applicant_first_name,003,rename | filter
+15,003,edw_staging,020,surname2,004,edw_applicant,026,cust_id,003,rename | filter
+16,003,edw_staging,021,first_name2,004,edw_applicant,027,applicant_surname,003,rename | filter
+17,003,edw_staging,015,app_id,005,edw_application,029,app_id,001,copy
+18,003,edw_staging,016,app_dt,005,edw_application,030,app_dt,001,copy
+19,003,edw_staging,023,loan_amt,005,edw_application,031,loan_amt,001,copy
+20,003,edw_staging,024,deposit_amt,005,edw_application,032,deposit_amt,001,copy
+21,003,edw_staging,025,property_value,005,edw_application,033,property_value,001,copy
+22,003,edw_staging,023,loan_amt,005,edw_application,034,lvr,004,transformation | multi-sourced
+23,003,edw_staging,025,property_value,005,edw_application,034,lvr,004,transformation | multi-sourced
+24,003,edw_staging,024,deposit_amt,005,edw_application,035,deposit_pct,004,transformation | multi-sourced
+25,003,edw_staging,025,property_value,005,edw_application,035,deposit_pct,004,transformation | multi-sourced
+26,005,edw_application,029,app_id,006,edw_pd,036,app_id,001,copy
+27,005,edw_application,034,lvr,006,edw_pd,037,pd,005,transformation | single-sourced
+28,005,edw_application,029,app_id,007,edw_lgd,038,app_id,001,copy
+29,005,edw_application,034,lvr,007,edw_lgd,039,lgd,005,transformation | single-sourced
