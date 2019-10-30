@@ -1,0 +1,8 @@
+ds_id,ds_nm,ds_owner
+001,cust,abc
+002,app,abc
+003,edw_staging,abc
+004,edw_applicant,abc
+005,edw_application,abc
+006,edw_pd,abc
+007,edw_lgd,abc
