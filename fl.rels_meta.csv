@@ -1,0 +1,9 @@
+rel_id,rel_nm
+001,copy
+002,rename
+003,rename | filter
+004,transform | multi-sourced
+005,transform | single-sourced
+006,copy | filter
+007,transform | single-sourced | filter
+008,transform | multi-sourced | filter
