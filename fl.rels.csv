@@ -1,4 +1,4 @@
-ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,var_id_dst,var_nm_dst,rel_id,rel_nm,trans_nm
+ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,var_id_dst,var_nm_dst,rel_id,rel_nm,trans_type
 002,app,004,app_id,003,edw_staging,015,app_id,001,copy,
 002,app,005,app_dt,003,edw_staging,016,app_dt,001,copy,
 002,app,006,surname1,003,edw_staging,017,surname1,001,copy,
@@ -29,10 +29,10 @@ ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,var_id_dst,var_nm_
 005,edw_application,034,lvr,006,edw_pd,037,pd,005,transform | single-sourced,divide
 005,edw_application,029,app_id,007,edw_lgd,038,app_id,001,copy,
 005,edw_application,034,lvr,007,edw_lgd,039,lgd,005,transform | single-sourced,function<max>
-005,edw_application,029,app_id,008,rwa,040,app_id,006,copy | filter,
-005,edw_application,031,loan_amt,008,rwa,041,ead,003,rename | filter,
-006,edw_pd,037,pd,008,rwa,042,pd,006,copy | filter,
-007,edw_lgd,039,lgd,008,rwa,044,lgd,007,transform | single-sourced | filter,function<max>
-008,rwa,042,pd,008,rwa,045,rwa,008,transform | multi-sourced | filter,multiply
-008,rwa,044,lgd,008,rwa,045,rwa,008,transform | multi-sourced | filter,multiply
-008,rwa,041,ead,008,rwa,045,rwa,008,transform | multi-sourced | filter,multiply
+005,edw_application,029,app_id,008,rwa,040,app_id,001,copy,
+005,edw_application,031,loan_amt,008,rwa,041,ead,002,rename,
+006,edw_pd,037,pd,008,rwa,042,pd,001,copy,
+007,edw_lgd,039,lgd,008,rwa,044,lgd,005,transform | single-sourced,function<max>
+008,rwa,042,pd,008,rwa,045,rwa,004,transform | multi-sourced,multiply
+008,rwa,044,lgd,008,rwa,045,rwa,004,transform | multi-sourced,multiply
+008,rwa,041,ead,008,rwa,045,rwa,004,transform | multi-sourced,multiply
