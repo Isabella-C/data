@@ -1,4 +1,0 @@
-ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,join_type
-006,edw_pd,036,app_id,008,rwa,inner join
-005,edw_application,029,app_id,008,rwa,inner join
-007,edw_lgd,038,app_id,008,rwa,inner join
