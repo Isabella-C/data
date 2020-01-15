@@ -1,0 +1,70 @@
+[
+    {
+        "rel_id": "00001",
+        "rel_nm": "transform"
+    },
+    {
+        "rel_id": "00002",
+        "rel_nm": ""
+    },
+    {
+        "rel_id": "00003",
+        "rel_nm": "row-filter | row append | left join"
+    },
+    {
+        "rel_id": "00004",
+        "rel_nm": "row-filter | transform | union all | row append"
+    },
+    {
+        "rel_id": "00005",
+        "rel_nm": "row-filter | transform | row append | left join"
+    },
+    {
+        "rel_id": "00006",
+        "rel_nm": "transform | row append | left join"
+    },
+    {
+        "rel_id": "00007",
+        "rel_nm": "row-filter | rename | transform | row append | left join"
+    },
+    {
+        "rel_id": "00008",
+        "rel_nm": "rename | transform | union all | row append"
+    },
+    {
+        "rel_id": "00009",
+        "rel_nm": "rename | transform | row append | left join"
+    },
+    {
+        "rel_id": "00010",
+        "rel_nm": "row-append"
+    },
+    {
+        "rel_id": "00011",
+        "rel_nm": "row-filter | rename | transform | self-transform"
+    },
+    {
+        "rel_id": "00012",
+        "rel_nm": "row-filter"
+    },
+    {
+        "rel_id": "00013",
+        "rel_nm": "row-filter | rename | transform | self-transform | hash table"
+    },
+    {
+        "rel_id": "00014",
+        "rel_nm": "row-filter | transform"
+    },
+    {
+        "rel_id": "00015",
+        "rel_nm": "row-filter | self-transform | union all"
+    },
+    {
+        "rel_id": "00016",
+        "rel_nm": "row-filter | transform | self-transform"
+    },
+    {
+        "rel_id": "00017",
+        "rel_nm": "rename | transform | left join"
+    }
+]

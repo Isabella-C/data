@@ -1,0 +1,342 @@
+[
+    {
+        "trans_type_id": "00001",
+        "trans_type": "strip"
+    },
+    {
+        "trans_type_id": "00002",
+        "trans_type": "cats"
+    },
+    {
+        "trans_type_id": "00003",
+        "trans_type": "sas-proc-summary"
+    },
+    {
+        "trans_type_id": "00004",
+        "trans_type": "catx"
+    },
+    {
+        "trans_type_id": "00005",
+        "trans_type": "case_when|substr|lpad|string_concatenation"
+    },
+    {
+        "trans_type_id": "00006",
+        "trans_type": "case_when"
+    },
+    {
+        "trans_type_id": "00007",
+        "trans_type": "substr|lpad|string_concatenation"
+    },
+    {
+        "trans_type_id": "00008",
+        "trans_type": "case_when|max|function"
+    },
+    {
+        "trans_type_id": "00009",
+        "trans_type": "case_when|sum|subtract|function"
+    },
+    {
+        "trans_type_id": "00010",
+        "trans_type": "decode|min|function"
+    },
+    {
+        "trans_type_id": "00011",
+        "trans_type": "case_when|decode|coalesce|function"
+    },
+    {
+        "trans_type_id": "00012",
+        "trans_type": "max|over"
+    },
+    {
+        "trans_type_id": "00013",
+        "trans_type": "nvl|add"
+    },
+    {
+        "trans_type_id": "00014",
+        "trans_type": "min|function"
+    },
+    {
+        "trans_type_id": "00015",
+        "trans_type": "to_char"
+    },
+    {
+        "trans_type_id": "00016",
+        "trans_type": "case_when|substr"
+    },
+    {
+        "trans_type_id": "00017",
+        "trans_type": "case_when|length|to_date|function"
+    },
+    {
+        "trans_type_id": "00018",
+        "trans_type": "substr"
+    },
+    {
+        "trans_type_id": "00019",
+        "trans_type": "case_when|regexp_like|to_number|subtract|add"
+    },
+    {
+        "trans_type_id": "00020",
+        "trans_type": "trunc"
+    },
+    {
+        "trans_type_id": "00021",
+        "trans_type": "case_when|upper|function"
+    },
+    {
+        "trans_type_id": "00022",
+        "trans_type": "trunc|subtract"
+    },
+    {
+        "trans_type_id": "00023",
+        "trans_type": "case_when|trunc|round|function|subtract|divide"
+    },
+    {
+        "trans_type_id": "00024",
+        "trans_type": "to_number|to_char|trunc"
+    },
+    {
+        "trans_type_id": "00025",
+        "trans_type": "case_when|function"
+    },
+    {
+        "trans_type_id": "00026",
+        "trans_type": "sas-proc-append"
+    },
+    {
+        "trans_type_id": "00027",
+        "trans_type": "ifn|intnx|subtract"
+    },
+    {
+        "trans_type_id": "00028",
+        "trans_type": "sum|subtract"
+    },
+    {
+        "trans_type_id": "00029",
+        "trans_type": "coalesce"
+    },
+    {
+        "trans_type_id": "00030",
+        "trans_type": "subtract"
+    },
+    {
+        "trans_type_id": "00031",
+        "trans_type": "left|put"
+    },
+    {
+        "trans_type_id": "00032",
+        "trans_type": "intnx"
+    },
+    {
+        "trans_type_id": "00033",
+        "trans_type": "max"
+    },
+    {
+        "trans_type_id": "00034",
+        "trans_type": "intck"
+    },
+    {
+        "trans_type_id": "00035",
+        "trans_type": "ifn|function"
+    },
+    {
+        "trans_type_id": "00036",
+        "trans_type": "first_value|over|function"
+    },
+    {
+        "trans_type_id": "00037",
+        "trans_type": "rank|function"
+    },
+    {
+        "trans_type_id": "00038",
+        "trans_type": "lpad"
+    },
+    {
+        "trans_type_id": "00039",
+        "trans_type": "first_value|over"
+    },
+    {
+        "trans_type_id": "00040",
+        "trans_type": "function"
+    },
+    {
+        "trans_type_id": "00041",
+        "trans_type": "sum|nvl"
+    },
+    {
+        "trans_type_id": "00042",
+        "trans_type": "max|nvl"
+    },
+    {
+        "trans_type_id": "00043",
+        "trans_type": "sum"
+    },
+    {
+        "trans_type_id": "00044",
+        "trans_type": "case_when|sum|in"
+    },
+    {
+        "trans_type_id": "00045",
+        "trans_type": "case_when|sum"
+    },
+    {
+        "trans_type_id": "00046",
+        "trans_type": "min"
+    },
+    {
+        "trans_type_id": "00047",
+        "trans_type": "mean"
+    },
+    {
+        "trans_type_id": "00048",
+        "trans_type": "to_date|subtract"
+    },
+    {
+        "trans_type_id": "00049",
+        "trans_type": "round|function|subtract|divide"
+    },
+    {
+        "trans_type_id": "00050",
+        "trans_type": "lag|function"
+    },
+    {
+        "trans_type_id": "00051",
+        "trans_type": "row_number|function"
+    },
+    {
+        "trans_type_id": "00052",
+        "trans_type": "bquote|parallel|divide|multiply|add"
+    },
+    {
+        "trans_type_id": "00053",
+        "trans_type": "case_when|nvl|function|subtract"
+    },
+    {
+        "trans_type_id": "00054",
+        "trans_type": "nvl"
+    },
+    {
+        "trans_type_id": "00055",
+        "trans_type": "case_when|nvl|function|subtract|add"
+    },
+    {
+        "trans_type_id": "00056",
+        "trans_type": "case_when|trim|min|over"
+    },
+    {
+        "trans_type_id": "00057",
+        "trans_type": "case_when|trim"
+    },
+    {
+        "trans_type_id": "00058",
+        "trans_type": "case_when|sum|function|divide"
+    },
+    {
+        "trans_type_id": "00059",
+        "trans_type": "case_when|over|function"
+    },
+    {
+        "trans_type_id": "00060",
+        "trans_type": "case_when|round|divide"
+    },
+    {
+        "trans_type_id": "00061",
+        "trans_type": "case_when|coalesce|function"
+    },
+    {
+        "trans_type_id": "00062",
+        "trans_type": "case_when|nvl|function|divide"
+    },
+    {
+        "trans_type_id": "00063",
+        "trans_type": "case_when|trim|coalesce|cast|function|add"
+    },
+    {
+        "trans_type_id": "00064",
+        "trans_type": "case_when|function|subtract"
+    },
+    {
+        "trans_type_id": "00065",
+        "trans_type": "case_when|greatest|extract|function|subtract"
+    },
+    {
+        "trans_type_id": "00066",
+        "trans_type": "case_when|nvl|function|subtract|divide"
+    },
+    {
+        "trans_type_id": "00067",
+        "trans_type": "case_when|coalesce|min|over|function"
+    },
+    {
+        "trans_type_id": "00068",
+        "trans_type": "case_when|coalesce|min|over|function|add"
+    },
+    {
+        "trans_type_id": "00069",
+        "trans_type": "case_when|max|over|coalesce|function"
+    },
+    {
+        "trans_type_id": "00070",
+        "trans_type": "case_when|max|coalesce|over|function"
+    },
+    {
+        "trans_type_id": "00071",
+        "trans_type": "case_when|max|over|coalesce|function|add"
+    },
+    {
+        "trans_type_id": "00072",
+        "trans_type": "case_when|coalesce|max|over|function|add"
+    },
+    {
+        "trans_type_id": "00073",
+        "trans_type": "sum|multiply"
+    },
+    {
+        "trans_type_id": "00074",
+        "trans_type": "case_when|sum|over|function"
+    },
+    {
+        "trans_type_id": "00075",
+        "trans_type": "case_when|max|over|function"
+    },
+    {
+        "trans_type_id": "00076",
+        "trans_type": "case_when|add|function"
+    },
+    {
+        "trans_type_id": "00077",
+        "trans_type": "case_when|function|add"
+    },
+    {
+        "trans_type_id": "00078",
+        "trans_type": "case_when|add"
+    },
+    {
+        "trans_type_id": "00079",
+        "trans_type": "case_when|divide"
+    },
+    {
+        "trans_type_id": "00080",
+        "trans_type": "case_when|nvl|function|add"
+    },
+    {
+        "trans_type_id": "00081",
+        "trans_type": "case_when|function|divide|add"
+    },
+    {
+        "trans_type_id": "00082",
+        "trans_type": "case_when|upper|function|subtract"
+    },
+    {
+        "trans_type_id": "00083",
+        "trans_type": "case_when|subtract"
+    },
+    {
+        "trans_type_id": "00084",
+        "trans_type": "case_when|function|divide"
+    },
+    {
+        "trans_type_id": "00085",
+        "trans_type": "case_when|function|subtract|add"
+    }
+]

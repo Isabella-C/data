@@ -1,0 +1,13 @@
+rel_id,rel_nm
+00001,transform
+00002,append|copy
+00003,append|create
+00004,append|transform
+00005,append|rename
+00006,append
+00007,rename
+00008,self-transform
+00009,self-rename
+00010,copy
+00011,create
+00012,self-copy

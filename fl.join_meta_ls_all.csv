@@ -1,0 +1,5 @@
+join_type_id,join_type
+00001,row append
+00002,left join
+00003,union all
+00004,hash table

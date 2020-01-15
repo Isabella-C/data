@@ -1,0 +1,18 @@
+[
+    {
+        "join_type_id": "00001",
+        "join_type": "row append"
+    },
+    {
+        "join_type_id": "00002",
+        "join_type": "left join"
+    },
+    {
+        "join_type_id": "00003",
+        "join_type": "union all"
+    },
+    {
+        "join_type_id": "00004",
+        "join_type": "hash table"
+    }
+]
