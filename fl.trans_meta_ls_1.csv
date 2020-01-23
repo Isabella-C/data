@@ -1,0 +1,4 @@
+trans_type_id,trans_type
+00001,mean
+00002,multiply
+00003,sum

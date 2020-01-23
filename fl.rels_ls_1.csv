@@ -1,0 +1,22 @@
+ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,var_id_dst,var_nm_dst,rel_id,rel_nm,trans_type_id,trans_type,trans_str
+00002,CLAIM_HIST,00007,cov_type_cd,00003,CLAIM_PCT,00011,cov_type_cd,00001,copy,,,cov_type_cd
+00002,CLAIM_HIST,00010,risk_score,00003,CLAIM_PCT,00012,risk_score,00001,copy,,,risk_score
+00002,CLAIM_HIST,00009,claim,00003,CLAIM_PCT,00013,claim_pct,00002,transform,00001,mean,mean(claim) as claim_pct
+00003,CLAIM_PCT,00011,cov_type_cd,00004,RISK_EST,00014,cov_type_cd,00001,copy,,,cov_type_cd
+00003,CLAIM_PCT,00012,risk_score,00004,RISK_EST,00015,risk_score,00001,copy,,,risk_score
+00003,CLAIM_PCT,00013,claim_pct,00004,RISK_EST,00016,risk_pct,00003,rename,,,claim_pct as risk_pct
+00001,POLICY,00001,pol_num,00005,RISK,00017,pol_num,00001,copy,,,p.*
+00001,POLICY,00002,cov_end_date,00005,RISK,00018,cov_end_date,00001,copy,,,p.*
+00001,POLICY,00003,cov_start_date,00005,RISK,00019,cov_start_date,00001,copy,,,p.*
+00001,POLICY,00004,sum_ins,00005,RISK,00020,sum_ins,00001,copy,,,p.*
+00001,POLICY,00005,cov_type_cd,00005,RISK,00021,cov_type_cd,00001,copy,,,p.*
+00001,POLICY,00006,risk_score,00005,RISK,00022,risk_score,00001,copy,,,p.*
+00004,RISK_EST,00016,risk_pct,00005,RISK,00023,risk_pct,00001,copy,,,r.risk_pct
+00004,RISK_EST,00016,risk_pct,00005,RISK,00024,prov,00004,self-transform,00002,multiply,r.risk_pct*p.sum_ins as prov
+00001,POLICY,00004,sum_ins,00005,RISK,00024,prov,00004,self-transform,00002,multiply,r.risk_pct*p.sum_ins as prov
+00004,RISK_EST,00016,risk_pct,00005,RISK,00025,cap,00004,self-transform,00002,multiply,r.risk_pct*1.5*p.sum_ins as cap
+00001,POLICY,00004,sum_ins,00005,RISK,00025,cap,00004,self-transform,00002,multiply,r.risk_pct*1.5*p.sum_ins as cap
+00005,RISK,00021,cov_type_cd,00006,PROVISION,00026,cov_type_cd,00001,copy,,,cov_type_cd
+00005,RISK,00024,prov,00006,PROVISION,00027,total_prov,00002,transform,00003,sum,sum(prov) as total_prov
+00005,RISK,00021,cov_type_cd,00007,CAPITAL,00028,cov_type_cd,00001,copy,,,cov_type_cd
+00005,RISK,00025,cap,00007,CAPITAL,00029,total_cap,00002,transform,00003,sum,sum(cap) as total_cap

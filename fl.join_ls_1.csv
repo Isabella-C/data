@@ -1,0 +1,3 @@
+ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,join_type_id,join_type,join_str
+00001,POLICY,00005,"('cov_type_cd',)",00004,RISK_EST,00001,left join,policy p left join risk_est r on (p.cov_type_cd=r.cov_type_cd and p.risk_score=r.risk_score);
+00001,POLICY,00006,"('risk_score',)",00004,RISK_EST,00001,left join,policy p left join risk_est r on (p.cov_type_cd=r.cov_type_cd and p.risk_score=r.risk_score);

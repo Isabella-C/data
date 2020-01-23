@@ -1,0 +1,4 @@
+rel_id,rel_nm
+00001,transform
+00002,rename
+00003,transform | self-transform | left join

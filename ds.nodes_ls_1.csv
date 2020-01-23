@@ -1,0 +1,8 @@
+ds_id,ds_nm,ds_owner,code_ref,to_file,from_file,flag_delete
+00001,POLICY,ANZ,,[],[],0
+00002,CLAIM_HIST,ANZ,,[],[],0
+00003,CLAIM_PCT,ANZ,,[],[],0
+00004,RISK_EST,ANZ,,[],[],0
+00005,RISK,ANZ,,[],[],0
+00006,PROVISION,ANZ,,[],[],0
+00007,CAPITAL,ANZ,,[],[],0

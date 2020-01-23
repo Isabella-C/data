@@ -1,0 +1,7 @@
+ds_id_src,ds_nm_src,ds_id_dst,ds_nm_dst,rel_id,rel_nm,var_id_impacted_src,var_nm_impacted_src,var_id_impacted_dst,var_nm_impacted_dst,join_type,join_key
+00002,CLAIM_HIST,00003,CLAIM_PCT,00001,transform,"['00007', '00009', '00010']","['cov_type_cd', 'risk_score', 'claim']","['00011', '00012', '00013']","['cov_type_cd', 'risk_score', 'claim_pct']",,[]
+00003,CLAIM_PCT,00004,RISK_EST,00002,rename,"['00011', '00012', '00013']","['cov_type_cd', 'risk_score', 'claim_pct']","['00014', '00015', '00016']","['cov_type_cd', 'risk_score', 'risk_pct']",,[]
+00001,POLICY,00005,RISK,00003,transform | self-transform | left join,"['00001', '00002', '00003', '00004', '00005', '00006']","['pol_num', 'cov_end_date', 'cov_start_date', 'sum_ins', 'cov_type_cd', 'risk_score']","['00017', '00018', '00019', '00020', '00021', '00022', '00023', '00024', '00025']","['pol_num', 'cov_end_date', 'cov_start_date', 'sum_ins', 'cov_type_cd', 'risk_score', 'risk_pct', 'prov', 'cap']",,[]
+00004,RISK_EST,00005,RISK,00003,transform | self-transform | left join,['00016'],['risk_pct'],"['00017', '00018', '00019', '00020', '00021', '00022', '00023', '00024', '00025']","['pol_num', 'cov_end_date', 'cov_start_date', 'sum_ins', 'cov_type_cd', 'risk_score', 'risk_pct', 'prov', 'cap']",,[]
+00005,RISK,00006,PROVISION,00001,transform,"['00021', '00024']","['cov_type_cd', 'prov']","['00026', '00027']","['cov_type_cd', 'total_prov']",,[]
+00005,RISK,00007,CAPITAL,00001,transform,"['00021', '00025']","['cov_type_cd', 'cap']","['00028', '00029']","['cov_type_cd', 'total_cap']",,[]
