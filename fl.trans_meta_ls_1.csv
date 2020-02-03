@@ -1,0 +1,5 @@
+trans_type_id,trans_type
+00001,divide
+00002,max|subtract
+00003,max
+00004,multiply

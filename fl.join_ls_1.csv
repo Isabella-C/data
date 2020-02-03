@@ -1,0 +1,3 @@
+ds_id_src,ds_nm_src,var_id_src,var_nm_src,ds_id_dst,ds_nm_dst,join_type_id,join_type,join_str
+00008,PROCESS.APPLICATION,00078,"('app_id',)",00009,PROCESS.PD,00001,left join,process.application a left join process.pd p on a.app_id = p.app_id
+00008,PROCESS.APPLICATION,00078,"('app_id',)",00010,PROCESS.LGD,00001,left join,process.application a left join process.lgd l on a.app_id = l.app_id;
