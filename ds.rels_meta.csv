@@ -1,9 +1,0 @@
-rel_id,rel_nm
-001,duplicate
-002,subset
-003,subset | filter | append
-004,subset | transform
-005,inner join | rename
-006,inner join
-007,inner join | transform
-008,self-transform
